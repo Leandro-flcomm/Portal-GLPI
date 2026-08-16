@@ -333,6 +333,5 @@ sudo -u www-data php bin/console cache:clear
 
 **FLComm TI** — Sistema interno de autoatendimento para GLPI 11.
 
-- Entidades: FLComm, Asso Marítima, Camorim
 - Versão do plugin: 1.0.0
 - Compatibilidade GLPI: 11.0.0 – 12.0.0
