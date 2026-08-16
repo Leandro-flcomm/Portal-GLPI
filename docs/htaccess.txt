@@ -1,0 +1,18 @@
+# Conteúdo do /var/www/html/glpi/public/.htaccess
+# Substitua o .htaccess original do GLPI por este:
+
+RewriteEngine On
+
+# Plugin PHP files must go through Symfony even if they exist via symlink
+RewriteRule ^plugins/.+\.php$ index.php [QSA,L]
+
+# Redirect all non-existing files/dirs to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options SAMEORIGIN
+</IfModule>
