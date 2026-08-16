@@ -58,6 +58,9 @@ flcportal/
 └── js/
     └── portal.js           # JavaScript (auto-dismiss alertas, etc.)
 ```
+## Prints
+
+<img width="1905" height="822" alt="image" src="https://github.com/user-attachments/assets/a47fde9e-2a5b-47e4-9811-42094045bec5" />
 
 ---
 
